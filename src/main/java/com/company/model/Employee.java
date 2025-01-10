@@ -7,10 +7,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 @Entity
 @Table(name="employees")
+@Getter
+@Setter
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
